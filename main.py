@@ -1,6 +1,5 @@
 from fastapi import FastAPI, Response, status
 from pydantic import BaseModel
-import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from typing import Optional
