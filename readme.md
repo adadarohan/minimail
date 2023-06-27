@@ -41,6 +41,6 @@ There's a file called `base.py` in the existing `email_templates` directory. Tha
 
 Just make an html file and refer to the jinja docs. Use the name of the html file for the `template_name` field.
 
-# What was wrong with Nodemailer etc?
+## What was wrong with Nodemailer etc?
 
 Not much, its just that every microservice tends to have its own email setup, which is inefficient and makes it difficult to have a standard design language across emails.
