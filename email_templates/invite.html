@@ -1,0 +1,11 @@
+<!-- Sample Welcome Email based on the base template - 
+
+name - name of the user
+-->
+
+{% extends 'base.html' %}
+
+{% block header_text %}
+<p>Hi {{name}},</p>
+<p>Welcome to minimail!</p>
+{% endblock %}
