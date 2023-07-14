@@ -1,5 +1,6 @@
 import yaml
 from delivery_agents.smtp import SMTP
+from delivery_agents.mailgun import Mailgun
 
 with open('./config.yaml') as yaml_data_file:
     config = yaml.safe_load(yaml_data_file)
@@ -21,6 +22,16 @@ def agent_factory():
             sender_email=sender_config['email'],
             user_name=agent_config.get('user_name', None) ,
             password=agent_config.get('password', None),
+        )
+    elif agent_config['name'] ==  "mailgun":
+        if not agent_config['api_key'] or not agent_config['domain']:
+            raise Exception("Invalid Mailgun config")
+        
+        return Mailgun(
+            api_key=agent_config['api_key'],
+            domain=agent_config['domain'],
+            sender_name=sender_config['name'],
+            sender_email=sender_config['email'],
         )
     else:   
         raise Exception("Invalid email delivery agent")
