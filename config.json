@@ -1,0 +1,13 @@
+{
+  "api_key": null,
+  "sender": {
+    "name": "John Doe",
+    "email": "john@doe.com"
+  },
+  "delivery_agent": {
+    "name": "smtp",
+    "address": "smtp.freesmtpservers.com",
+    "port": 25
+  },
+  "rendering_engine": "jinja"
+}
