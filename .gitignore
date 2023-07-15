@@ -1,3 +1,4 @@
 todo
 __pycache__
 config.yaml
+email_templates/dist
