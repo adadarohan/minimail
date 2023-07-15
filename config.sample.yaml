@@ -1,0 +1,22 @@
+sender:
+  name: John Doe
+  email: john@doe.com
+rendering_engine: jinja
+#
+# SMTP Example
+# delivery_agent:
+#   name: smtp
+#   address: smtp.example.com
+#   port: 25
+#   # Optional Auth Arguments
+#   user_name: cooluser
+#   password: super_secure_password
+#
+# Mailgun Example
+# delivery_agent:
+#   name: mailgun
+#   api_key: apikey1234
+#   domain: example.com
+#
+# Optional Arguments
+# api_key : apikey1234
