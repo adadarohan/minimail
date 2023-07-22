@@ -8,6 +8,7 @@ import uvicorn
 import json
 from init import initialize_email_provider
 
+
 app = FastAPI()
 environment = Environment(loader=FileSystemLoader("email_templates/"))
 
