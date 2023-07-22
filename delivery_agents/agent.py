@@ -1,8 +1,8 @@
-import json
+import yaml
 from delivery_agents.smtp import SMTP
 
-with open('./config.json') as json_data_file:
-    config = json.load(json_data_file)
+with open('./config.yaml') as yaml_data_file:
+    config = yaml.safe_load(yaml_data_file)
 agent_config = config['delivery_agent']
 
 sender_config = config['sender']

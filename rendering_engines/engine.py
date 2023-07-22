@@ -1,8 +1,8 @@
-import json
+import yaml
 from rendering_engines.jinja import jinja
 
-with open('./config.json') as json_data_file:
-    config = json.load(json_data_file)
+with open('./config.yaml') as yaml_data_file:
+    config = yaml.safe_load(yaml_data_file)
 
 template_folder = "email_templates"
 
