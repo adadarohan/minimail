@@ -8,7 +8,10 @@ from delivery_agents.agent import agent_factory
 from rendering_engines.engine import engine_factory
 
 with open('./config.yaml') as yaml_data_file:
-    config = yaml.safe_load(yaml_data_file)
+    try :
+        config = yaml.safe_load(yaml_data_file)
+    except yaml.YAMLError as exc:
+        raise Exception("Invalid config file")
 
 app = FastAPI()
 delivery_agent = agent_factory()
