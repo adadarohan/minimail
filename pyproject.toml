@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "minimail"
+version = "0.1.0"
+description = "A lightweight, containerized email microservice"
+authors = ["Rohan Kapur <adada.rohan@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.100.0"
+pydantic = "^2.0.3"
+uvicorn = "^0.22.0"
+Jinja2 = "^3.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
