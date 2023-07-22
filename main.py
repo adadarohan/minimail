@@ -4,8 +4,8 @@ from typing import Optional
 import uvicorn
 import yaml 
 
-from delivery_agents.agent import agent_factory
-from rendering_engines.engine import engine_factory
+from delivery_agents import agent_factory
+from rendering_engines import engine_factory
 
 with open('./config.yaml') as yaml_data_file:
     try :
